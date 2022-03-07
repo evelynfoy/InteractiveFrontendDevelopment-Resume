@@ -30,7 +30,10 @@ function initMap() {
         });
     });
 
-    var markerCluster = new MarkerClusterer(map, markers, {
+    const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
+    
+    /* Version used in course demo - has been changed in Google Documentation to above 
+        var markerCluster = new MarkerClusterer(map, markers, {
         imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/marketclusterer/m'
-    });
+    }); */
 }
